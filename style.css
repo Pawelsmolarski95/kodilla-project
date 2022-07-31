@@ -3,7 +3,6 @@
 
 --color-one: #fafafa;
 --color-two: #EA2027;
-
 --font-main: font-family: 'Montserrat', sans-serif;
 
 
@@ -15,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/* HERO + NAV */
 
 .hero {
     width: 100%;
@@ -25,8 +25,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    
 }
 
 nav {
@@ -35,7 +33,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 45px 8% 0;
-
 }
 
 .logo {
@@ -65,7 +62,6 @@ nav ul li a {
     letter-spacing: 1px;
     padding-bottom: 5px;
     cursor: pointer;
-
 }
 
 nav ul li a:hover {
@@ -94,12 +90,9 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-header {
-    /*position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translateX(-50%);*/
+/* HEADER */
 
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,6 +100,7 @@ header {
     padding-left: 40px;
     padding-bottom: 90px;
 }
+
  h1.introduce {
     font-size: 75px;
     color: var(--color-one);
@@ -132,7 +126,6 @@ header {
     max-width: 100%;
     position: relative;
     cursor: pointer;
-
  }
  
  .newsletter form input:first-child {
@@ -159,6 +152,8 @@ header {
     box-shadow: 0px 0px 3px 2px rgba(234, 32, 39,1.0);
     cursor: pointer;
  }
+
+ /* ABOUET_ME*/
 
  section.about-me {
     width: 100%;
@@ -192,22 +187,25 @@ header {
     letter-spacing: 1px;
     color:var(--color-one)
 }
+
  .about-text p {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px; 
 }
 
  .about-text h3 {
     font-size:  40px;
     margin-bottom: 30px;
 }
+
 .about-text h5 {
     font-size:  30px;
     margin-bottom: 30px;
 }
  
+/* SERVICES*/
+
 section.services {
     width: 100%;
     padding: 100px 0;
@@ -251,8 +249,7 @@ section.services {
     color: var(--color-one);
     text-align: center;
     font-family: var(--font-main);
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px; 
 }
 
 .box h3 {
@@ -270,11 +267,11 @@ section.services {
     color: var(--color-one);
 
 }
+
 .box i:hover {
     color: var(--color-two);
     background: var(--color-one);
     transition: 0.4s linear;
-
 }
 
 .title {
@@ -284,28 +281,29 @@ section.services {
     align-self: center;
     padding: 30px 20px;
 }
+
 .title h1 {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-
+/*SKILLS*/
 
 .skills {
     width: 100%;
     background-color:rgba(1,1,1,0.7);
     padding: 100px 100px;
     font-family: var(--font-main);
-
 }
+
 .container-skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-
 }
+
  .wrapper-skills {
     display: flex;
     flex-direction: row;
@@ -314,8 +312,8 @@ section.services {
     gap: 3rem 3rem;
     flex-wrap: wrap;
     padding-top: 20px;
-
  }
+
 .skill img {
     height: auto;
     width: 100%;
@@ -346,7 +344,6 @@ section.services {
     letter-spacing: 1px;
     color: var(--color-one);
     font-size: 40px;
-
  }
 
  .title-skills-h3 {
@@ -363,7 +360,7 @@ section.services {
     gap: 1rem;
  }
 
-  /*Footer*/
+  /*FOOTER*/
 
   footer {
     background-color:rgba(1,1,1,0.7);
@@ -374,7 +371,6 @@ section.services {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
  }
 
  footer ul li {
@@ -389,10 +385,9 @@ footer ul li a {
     font-size: 20px;
     font-family: var(--font-main);
     letter-spacing: 1px;
-    
     cursor: pointer;
-
 }
+
 .footer-ul i {
     font-size: 29px;
     cursor: pointer;
@@ -401,7 +396,6 @@ footer ul li a {
     line-height: 60px;
     width: 60px;
     border-radius: 50%;
-
 }
 
 .footer-ul i:hover {
@@ -420,11 +414,12 @@ footer ul li a {
     font-size: 16px;
     padding-bottom: 20px;
 }
+
 .footer-subtitle i {
     font-size: 16px;
 }
 
-/*media */
+/*MEDIA */
 
 @media (max-width: 767px) {
     
@@ -434,14 +429,14 @@ footer ul li a {
         justify-content: center;
         padding-bottom: 50px
     }
+
     nav ul {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        ;
-        
     }
+
     nav ul li {
         flex-basis: 40%;
     }
@@ -451,6 +446,7 @@ footer ul li a {
         padding-left:2px; 
         text-align: center;
     }
+
     .container {
         flex-direction: column;
         justify-content: center;
